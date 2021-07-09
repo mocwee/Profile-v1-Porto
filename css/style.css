@@ -1,0 +1,434 @@
+/* IMPORT font-face */
+
+@font-face {
+    font-family: "Poppins Regular";
+    src: url("asset/font/Poppins-Regular.ttf");
+}
+
+
+
+
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* Setting Parent */
+body {
+    height:  3700px;
+	line-height: 1;
+    font-family: "Poppins Regular";
+    font: 17px/28px;
+    background-color: #c5c5c5;
+    color: #333;
+}
+/* End Setiing Parent */
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End Reset CSS */
+
+/* CSS Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+/* End Clearfix CSS */
+
+
+/* Start Layout */
+
+.container {
+    margin: auto;
+    width: 960px;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 45px;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.menu {
+    background-color: #333;
+    padding: 9px 14px;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: salmon;
+}
+
+.menu a:hover {
+    transition: 0.4s;
+    color: #eaeaea;
+}
+
+header img {
+    width: 960px;
+    height: 310px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 4px solid salmon;
+}
+
+
+/* Aside Web */
+
+
+.jam {
+    position: absolute;
+    top: 170px;
+    left: 10px;
+    text-align: right;
+    border-bottom: 3px solid salmon;
+    padding: 3px;
+}
+
+
+
+.dice {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 250px;
+    left: 90px;
+    background-color: #333;
+    float: left;
+}
+
+.dice-2 {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 280px;
+    left: 90px;
+    background-color: salmon;
+    float: left;
+}
+
+.dice-3 {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 310px;
+    left: 90px;
+    background-color: salmon;
+    float: left;
+}
+
+.dice:hover {
+    background-color: rgb(31, 31, 31);
+    transition: 0.3s;
+}
+
+.dice-2:hover, .dice-3:hover {
+    background-color: rgb(194, 100, 90);
+    transition: 0.3s;
+}
+
+
+
+.desc {
+    position: absolute;
+    float: right;
+    top: 170px;
+    right: 30px;
+    text-align: left;
+    border-bottom: 3px solid salmon;
+    padding: 3px;
+}
+
+.gallery a {
+    position: absolute;
+    top: 570px;
+    left: 20px;
+    text-decoration: none;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(97, 97, 97);
+    padding: 3px;
+}
+
+.gallery a:hover {
+    color: rgb(53, 52, 52);
+    transition: 0.4s;
+}
+
+/* End Aside Web */
+
+
+/*  Gallery Layout */
+.gallery {
+    background-color: #fff;
+    
+}
+
+    .headline {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 700;
+        padding: 20px;
+    }
+
+    .headline-2 {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 600;
+        color: rgb(122, 122, 122);
+    }
+
+    .group-box {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px;
+        justify-content: center;
+        justify-items: stretch;
+    }
+
+    .box-img {
+        border-radius: 10px;
+        margin: 3px;
+        box-sizing: border-box;
+        display: inline-block;
+        background-image: url('../asset/img/book/book-1.jpg');
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+    }
+
+      /* Setiing Image-box */
+        .box-img-2 {
+        border-radius: 10px;
+        margin: 3px;
+        box-sizing: border-box;
+        display: inline-block;
+        background-image: url('../asset/img/book/book-2.jpg');
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        }
+
+        .box-img-3 {
+        border-radius: 10px;
+        margin: 3px;
+        box-sizing: border-box;
+        display: inline-block;
+        background-image: url('../asset/img/book/book-3.jpg');
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        }
+
+        .box-img-4 {
+            border-radius: 10px;
+            margin: 3px;
+            box-sizing: border-box;
+            display: inline-block;
+            background-image: url('../asset/img/book/book-4.jpg');
+            background-size: cover;
+            width: 150px;
+            height: 150px;
+            }
+        
+        .box-img-5 {
+        border-radius: 10px;
+        margin: 3px;
+        box-sizing: border-box;
+        display: inline-block;
+        background-image: url('../asset/img/book/book-5.jpg');
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        }
+
+        .box-img-6 {
+            border-radius: 10px;
+            margin: 3px;
+            box-sizing: border-box;
+            display: inline-block;
+            background-image: url('../asset/img/book/book-6.jpg');
+            background-size: cover;
+            width: 150px;
+            height: 150px;
+            }
+
+        .box-img-7 {
+        border-radius: 10px;
+        margin: 3px;
+        box-sizing: border-box;
+        display: inline-block;
+        background-image: url('../asset/img/book/book-7.jpg');
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        }
+
+        .box-img-8 {
+            border-radius: 10px;
+            margin: 3px;
+            box-sizing: border-box;
+            display: inline-block;
+            background-image: url('../asset/img/book/book-8.jpg');
+            background-size: cover;
+            width: 150px;
+            height: 150px;
+            }
+
+        .box-img-9 {
+        border-radius: 10px;
+        margin: 3px;
+        box-sizing: border-box;
+        display: inline-block;
+        background-image: url('../asset/img/book/book-9.jpg');
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        }
+      /* End Setting */
+    /* End Image-box */
+/* End Gallery */
+
+/* My Profile */
+        .my-profile {
+            height: 600px;
+        }
+
+        .my-profile img {
+            border-radius: 10px;
+            margin: 30px auto;
+            display: flex;
+            width: 290px;
+            height: 290px;
+            background-size: cover;
+        }
+/* End Profile */
+
+
+/* Blog Setting */
+
+        .main, .my-profile {
+            width: 720px;
+            background-color: #fff;
+            height: 1700px;
+        }
+
+            .content-blog .headline-blog {
+                font-weight: 600;
+                font-size: 24px;
+                padding: 33px 0 0 33px;
+            }
+
+                .content-blog .desc-blog {
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: rgb(97, 97, 97);
+                    padding: 23px 0 20px 35px;
+                }
+
+                .content-blog .desc-blog a {
+                    color: rgba(43, 43, 167, 0.774);
+                    text-decoration: none;
+                }
+
+            .content-blog .write-blog {
+                font: 19px/25px sans-serif;
+                font-weight: 500;
+                margin: auto;
+                word-break: keep-all;
+                color: rgb(31, 31, 31);
+                text-align: justify;
+                padding: 33px;
+            }
+/* End Blog Setting */
+
+
+/* Footer */
+        .container .footer {
+            position: relative;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .footer a {
+            color: salmon;
+            text-decoration: none;
+        }
+/* End Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
